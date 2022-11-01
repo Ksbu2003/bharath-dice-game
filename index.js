@@ -1,0 +1,11 @@
+var a=Math.random();
+var b=6*a+1;
+b=Math.floor(b);
+var d=Math.random();
+var c=6*d+1;
+c=Math.floor(c);
+var image1 = document.querySelectorAll("img")[0];
+image1.setAttribute("src" , "images/dice"+b+".png");
+var image2=document.querySelectorAll("img")[1];
+image2.setAttribute("src","images/dice"+c+".png");
+document.getElementById("num").innerHTML=b+c;
